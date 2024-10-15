@@ -1,0 +1,90 @@
+/* Global settings */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+/* Main container */
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-color: #333;
+  color: white;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-section h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* Login Section */
+.login-section {
+  background-color: #E74C3C;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #E74C3C;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-container i {
+  margin-right: 10px;
+  color: #333;
+}
+
+.input-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+p {
+  margin-top: 20px;
+  color: #333;
+}
