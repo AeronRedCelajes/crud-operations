@@ -1,35 +1,53 @@
-/* Global settings */
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  height: 100%;
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
-/* Main container */
+/* Container Styles */
 .login-container {
   display: flex;
   height: 100vh;
 }
 
-/* Welcome Section */
+/* Left Side - Welcome Section */
 .welcome-section {
-  background-color: #333;
-  color: white;
+  background-color: #534E76; /* Left background color */
   flex: 1;
+  padding: 2rem;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
 }
 
-.welcome-section h1 {
-  font-size: 48px;
-  font-weight: bold;
+.logo-container {
+  margin-bottom: 1rem;
 }
 
-/* Login Section */
+.logo {
+  max-width: 400px;
+}
+
+.brand-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.welcome-text {
+  max-width: 400px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Right Side - Login Section */
 .login-section {
-  background-color: #E74C3C;
+  background-color: #7D75B4; /* Right background color */
   flex: 1;
   display: flex;
   justify-content: center;
@@ -37,54 +55,61 @@ body, html {
 }
 
 .login-form {
-  background-color: white;
-  padding: 40px;
+  /*background-color: white;*/
+  padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  width: 100%;
+  max-width: 350px;
 }
 
 .icon {
-  font-size: 48px;
-  margin-bottom: 20px;
-  color: #E74C3C;
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
 .input-container {
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
 }
 
 .input-container i {
-  margin-right: 10px;
-  color: #333;
+  margin-right: 0.5rem;
 }
 
 .input-container input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-  font-size: 16px;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-family: 'Montserrat', sans-serif;
 }
 
-button {
-  background-color: #333;
+.login-button {
+  background-color: #534E76;
   color: white;
-  padding: 10px 20px;
   border: none;
+  padding: 0.75rem 1.5rem;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%;
-  font-size: 16px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
-button:hover {
-  background-color: #555;
+.signup-text {
+  margin-top: 1rem;
+  color: #534E76;
 }
 
-p {
-  margin-top: 20px;
-  color: #333;
+/* Navbar Styles */
+.navbar {
+  background-color: #2D2850; /* Navbar color */
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
