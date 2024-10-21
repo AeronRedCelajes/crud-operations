@@ -1,0 +1,158 @@
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Container Styles */
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left Side - Welcome Section */
+.welcome-section {
+  background-color: #534E76; /* Left background color */
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.logo-container {
+  margin-bottom: 1rem;
+}
+
+.logo {
+  max-width: 400px;
+}
+
+.brand-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.welcome-text {
+  max-width: 400px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Right Side - Login Section */
+.login-section {
+  background-color: #7D75B4; /* Right background color */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  /*background-color: white;*/
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.input-container {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1; /* Light background for input field */
+  border-radius: 5px;
+  padding: 0.5rem 1rem; /* Add padding for spacing */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.input-container i {
+  color: #534E76; /* Icon color matching theme */
+  margin-right: 0.5rem;
+  font-size: 1.2rem; /* Adjust icon size */
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #333; /* Text color */
+}
+
+.input-container:focus-within {
+  border: 2px solid #534E76; /* Highlight border when focused */
+}
+
+.login-button {
+  background-color: #E0DDD5; /* Softer purple background */
+  color: #534E76; /* White text for contrast */
+  border: none;
+  padding: 0.75rem 1.5rem; /* Adequate padding for a balanced look */
+  border-radius: 30px; /* Fully rounded corners for a pill-shaped button */
+  cursor: pointer;
+  font-size: 1rem; /* Standard text size */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* Semi-bold text for clarity */
+  transition: all 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow for subtle 3D effect */
+  letter-spacing: 0.5px; /* Adds a slight spacing between letters */
+}
+
+/* Hover effect */
+.login-button:hover {
+  background-color: #5c549b; /* Slightly darker shade for hover */
+  color: #E0DDD5;
+  transform: translateY(-3px); /* Subtle lift effect */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+/* Active/Pressed state */
+.login-button:active {
+  background-color: #453f6b; /* Darker shade when pressed */
+  color: #E0DDD5;
+  transform: translateY(0); /* Reset transform */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Reduced shadow for pressed effect */
+}
+
+.signup-text {
+  margin-top: 1rem;
+  color: #534E76;
+}
+
+/* Don't have an account?*/
+.register-text {
+  color: white; /* Default text color */
+  text-align: right; /* Align text to the right */
+  margin-top: 1rem; /* Space above the paragraph */
+  font-weight: bold; /* Make text bold */
+}
+
+.register-text a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.register-text a:hover {
+  color: #E0DDD5; /* Change link color on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}

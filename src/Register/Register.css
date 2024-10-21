@@ -1,0 +1,95 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #544373;
+}
+
+.register-section {
+  background-color: #7f67a6;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+.logo-container img {
+  width: 150px;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-container i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+input {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="file"] {
+  padding-left: 0;
+}
+
+.name-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.name-fields .input-container {
+  flex: 1;
+}
+
+.register-button {
+  padding: 10px;
+  background-color: #4c3b80;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-text {
+  margin-top: 20px;
+}
+
+.login-text a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.upload-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.upload-section i {
+  font-size: 40px;
+  color: #fff;
+}
+
+.upload-section p {
+  margin: 10px 0;
+  color: #fff;
+}
