@@ -10,7 +10,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent default form submission
     // Check username and password
-    if (username === 'Earth' && password === 'Earth') {
+    if (username === 'admin' && password === 'admin') {
       navigate('/admin'); // Redirect to Admin page
     } else {
       navigate('/account'); // Redirect to Account page for incorrect credentials
