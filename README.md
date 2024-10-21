@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Steps
+
+1. After downloading the folders, open Terminal and then type "cd CRUD" if not yet in the CRUD directory.
+2. Then run this command ``npx create-react-app crud-app``
+3. Now run this command ``npm install react-router-dom``
+4. Then run this command ``npm install framer-motion``
+5. Then test by running ``npm start``
+
 ## Available Scripts
 
 In the project directory, you can run:
