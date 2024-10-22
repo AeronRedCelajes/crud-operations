@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import './Account.css'; // Ensure styling is consistent with other pages
-import Navbar from '../Navbar'; 
 
 function Account() {
   // State to track edit mode
@@ -29,8 +27,6 @@ function Account() {
 
   return (
     <div className="account-container">
-      {/* Navbar Section */}
-      <Navbar />
       {/* Profile Section */}
       <div className="profile-section">
         <h1>Profile</h1>

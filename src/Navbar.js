@@ -11,7 +11,7 @@ function Navbar() {
       </div>
       <h3 className="navbar-title"><strong>AnimeGaze</strong></h3>
       {/* Conditionally render the logout button if on the Account page */}
-      {location.pathname === '/account' && (
+      {(location.pathname === '/account' || location.pathname === '/admin') && (
           <ul className="navbar-links">
               <li><a href="/login">Log Out</a></li>
           </ul>
