@@ -96,7 +96,7 @@ function Account() {
 
         {/* Action Buttons */}
         <div className="action-buttons">
-          <button className="delete-profile-btn">Delete Profile</button>
+          <button className="delete-profile-btn">Disable</button>
           <button className="edit-profile-btn" onClick={toggleEditMode}>
             {isEditing ? 'Save' : 'Edit Profile'}
           </button>
