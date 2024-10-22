@@ -12,7 +12,8 @@
   }
   
   .navbar-logo .logo {
-    max-width: 80px; /* Adjust as needed */
+    width: 120px;
+    padding-top: 10px;
   }
 
   .navbar-title {
@@ -26,6 +27,7 @@
     list-style: none; /* Remove bullet points */
     display: flex; /* Flexbox for horizontal layout */
     gap: 2rem; /* Space between links */
+    margin-left: auto; /* Push links to the right */
   }
   
   .navbar-links a {

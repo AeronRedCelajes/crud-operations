@@ -1,17 +1,31 @@
+/* Root Styles */
+:root {
+  --primary-bg: #7f67a6;
+  --secondary-bg: #544373;
+  --button-color: #4c3b80;
+  --text-color: #fff;
+}
+
+/* Register Container */
 .register-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: #544373;
+  min-height: 100vh;
+  background-color: var(--secondary-bg);
+  padding: 20px;
+  box-sizing: border-box;
 }
 
+/* Register Section */
 .register-section {
-  background-color: #7f67a6;
+  background-color: var(--primary-bg);
   padding: 20px;
   border-radius: 10px;
-  width: 400px;
+  width: 100%;
+  max-width: 500px; /* Adjust maximum width for large screens */
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .logo-container img {
@@ -19,7 +33,7 @@
 }
 
 h1 {
-  color: #fff;
+  color: var(--text-color);
   margin-bottom: 20px;
 }
 
@@ -38,7 +52,7 @@ h1 {
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: #fff;
+  color: var(--text-color);
 }
 
 input {
@@ -46,6 +60,7 @@ input {
   padding: 10px 10px 10px 40px;
   border-radius: 5px;
   border: none;
+  font-size: 16px;
 }
 
 input[type="file"] {
@@ -55,19 +70,30 @@ input[type="file"] {
 .name-fields {
   display: flex;
   gap: 10px;
+  flex-direction: row;
 }
 
 .name-fields .input-container {
   flex: 1;
 }
 
+/* Responsive Typography */
+h1 {
+  font-size: 1.5rem; /* Responsive heading size */
+}
+
 .register-button {
   padding: 10px;
-  background-color: #4c3b80;
-  color: #fff;
+  background-color: var(--button-color);
+  color: var(--text-color);
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #372e62;
 }
 
 .login-text {
@@ -75,7 +101,7 @@ input[type="file"] {
 }
 
 .login-text a {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: underline;
 }
 
@@ -86,10 +112,58 @@ input[type="file"] {
 
 .upload-section i {
   font-size: 40px;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .upload-section p {
   margin: 10px 0;
-  color: #fff;
+  color: var(--text-color);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .register-section {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .name-fields {
+    flex-direction: column; /* Stacks firstname and lastname vertically on small screens */
+  }
+
+  .register-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-section {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .logo-container img {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 16px;
+  display: block;
+}
+
+.error1 {
+  color: rgb(255, 251, 0);
+  font-size: 16px;
+  display: block;
 }
