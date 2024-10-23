@@ -22,10 +22,10 @@ function Login() {
       {/* Welcome Section */}
       <div className="welcome-section">
         <div className="logo-container">
-          <img src="img/logo.png" alt="AnimeGaze Logo" className="logo" />
+        <img src="img/logo.png" alt="AnimeGaze Logo" style={{ width: 'auto', maxWidth: '450px', marginBottom: '-8rem'}} />
         </div>
-        <h1>AnimeGaze</h1>
-        <p>
+        <h1 style={{ fontWeight: '900', fontSize: '100px' , marginBottom: '-3rem'}}>AnimeGaze</h1>
+        <p style={{fontSize: '30px', textAlign: 'justify', margin: '60px'}}>
           Dive into our reviews, character spotlights, and fun recommendations to help you discover your next favorite series. Join our friendly community to share thoughts, swap recommendations, and chat about all things anime. We’re excited to explore this vibrant world with you. Let’s make some unforgettable memories together!
         </p>
       </div>

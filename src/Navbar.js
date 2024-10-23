@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <img src="img/logo.png" alt="AnimeGaze Logo" className="logo" />
+        <img src="img/logo.png" alt="AnimeGaze Logo" className="navbar-logo" />
       </div>
       <h3 className="navbar-title"><strong>AnimeGaze</strong></h3>
       {/* Conditionally render the logout button if on the Account page */}
